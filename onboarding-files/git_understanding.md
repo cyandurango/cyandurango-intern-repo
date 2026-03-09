@@ -36,3 +36,7 @@ Goal: Learn how to write clear, meaningful commit messages that improve collabor
 ## **_What makes a good commit message?_**
 A good commit message includes a title that encapsulates what the change does. The description focuses on the summary/overview of what the added files does.
 
+## **_How does a clear commit message help in team collaboration?_**
+Clear commit messages help the team understand at a quick glance as to what the changes are being committed into the project. Project will be fully and correctly documented.
+
+
