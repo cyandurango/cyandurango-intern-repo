@@ -42,3 +42,15 @@ Clear commit messages help the team understand at a quick glance as to what the 
 ## **_How can poor commit messages cause issues later?_**
 Poor commit messages will cause some confusion regarding the files being uploaded inside the project. Vague descriptions create confusion, risk accidental deletion, and loses context of change.
 
+
+# 3.3 Understand Git Bisect
+Goal: Learn how to use git bisect to identify which commit introduced a bug in a project.
+
+**_What does git bisect do?_**
+Through a binary search algorithm, git bisect identifies which of the committed changes contain the buggy code update. This helps in identifying the source of the bugs.
+
+**_When would you use it in a real-world debugging situation?_**
+In a situation where a thousand commits are being reviewed (which is highly likely given that people are working on a project in real time), it would only take a maximum of ten steps to find the code with bugs in it.
+
+**_How does it compare to manually reviewing commits?_**
+Utilizing the same situation, users would have to go through each and every commit until they have found the one with bugs. Not only is this time consuming, but it is also taxing. 
