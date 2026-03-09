@@ -23,4 +23,11 @@ Categorise them into Navigation, Editing, Debugging, and Terminal Commands.
 - ```CTRL + ` ``` show/hide integrated terminal
 
 
+## **_Which shortcuts do you think will be the most useful in your daily work?_**
+
+To me, the editing and navigation shortcuts would be the most useful, as it would certainly help in viewing and changing the code much easier
+
+## **_How can keyboard shortcuts improve your productivity?_**
+Keyboard shortcuts takes less time as it keeps your hands in the keyboard at all times, allowing no time lags from moving your hands toward the mouse or touchpad.
+
 
