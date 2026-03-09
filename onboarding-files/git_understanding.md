@@ -39,4 +39,6 @@ A good commit message includes a title that encapsulates what the change does. T
 ## **_How does a clear commit message help in team collaboration?_**
 Clear commit messages help the team understand at a quick glance as to what the changes are being committed into the project. Project will be fully and correctly documented.
 
+## **_How can poor commit messages cause issues later?_**
+Poor commit messages will cause some confusion regarding the files being uploaded inside the project. Vague descriptions create confusion, risk accidental deletion, and loses context of change.
 
