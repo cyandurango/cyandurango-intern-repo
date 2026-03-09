@@ -46,11 +46,20 @@ Poor commit messages will cause some confusion regarding the files being uploade
 # 3.3 Understand Git Bisect
 Goal: Learn how to use git bisect to identify which commit introduced a bug in a project.
 
-**_What does git bisect do?_**
+## **_What does git bisect do?_**
 Through a binary search algorithm, git bisect command line identifies which of the committed changes contain the buggy code update. This helps in identifying the source of the bugs.
 
-**_When would you use it in a real-world debugging situation?_**
+## **_When would you use it in a real-world debugging situation?_**
 In a situation where a thousand commits are being reviewed (which is highly likely given that people are working on a project in real time), it would only take a maximum of ten steps to find the code with bugs in it.
 
-**_How does it compare to manually reviewing commits?_**
+## **_How does it compare to manually reviewing commits?_**
 Utilizing the same situation, users would have to go through each and every commit until they have found the one with bugs. Not only is this time consuming, but it is also taxing. 
+
+
+# 3.4 Advanced Git Commands & When to Use Them
+Goal: Understand and experiment with advanced Git commands using your preferred Git desktop client.
+
+## **_What does each command do?_**
+## **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
+## **_What surprised you while testing these commands?_**
+
