@@ -6,7 +6,7 @@ I installed Cursor.
 
 ## **_What did you use it for?_**
 I used the AI tool to do the following: 
-- generate ![code](assets/cursor-code-gen.png) for adding the picture to my ongoing personal project: _a personal professional profile website_;
+- generate [![code](assets/cursor-code-gen.png)](assets/cursor-code-gen.png) for adding the picture to my ongoing personal project: _a personal professional profile website_;
 - visualize the ![codebase](assets/cursor-codebase-diagram.png) of the same personal project; and
 - explain its overall ![logic](assets/cursor-code-logic.png), and the things need to be improved in this project.
 
