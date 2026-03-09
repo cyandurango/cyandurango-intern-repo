@@ -26,6 +26,7 @@ I used the AI tool to do the following:
   
   ![Logic and Improvements](assets/cursor-code-logic.png)
 </details>
+
 ## **_What did it help and struggle with_**
 Cursor helped me understand what is needed more for this project, and what can be improved upon its structure and convention. It strugged, however, on generic prompts and prefers more specific messages for better outputs (as is with all AI tools).
 
