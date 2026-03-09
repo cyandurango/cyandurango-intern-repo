@@ -16,6 +16,7 @@ Github made me choose between the two edits coming from the the two branches, gi
 ## **_What did you learn?_**
 I learned of merging branches, exploring merging conflicts, and how to resolve such conflicts. I also learned that to minimize such conflicts, I should not be editing on the same file in at least two branches.
 
+
 # 3.1 Pull Requests
 Goal: Learn how to create, review, and collaborate on Pull Requests (PRs) in GitHub.
 
@@ -27,3 +28,11 @@ A well-structured pull request generally has a summary of the change and how the
 
 ## **_What did you learn from reviewing an open-source PR?_**
 The structure of their PR dictates how organized they are, with easy-to-follow-through changes that aids the reviewer. From PR titles to descriptions, it goes to show how professional software engineers handle version control and changes.
+
+
+# 3.2 Writing Meaningful Commit Messages
+Goal: Learn how to write clear, meaningful commit messages that improve collaboration and code history readability.
+
+## **_What makes a good commit message?_**
+A good commit message includes a title that encapsulates what the change does. The description focuses on the summary/overview of what the added files does.
+
