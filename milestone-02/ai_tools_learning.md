@@ -1,5 +1,5 @@
 # 2.2 Learning AI Coding Tools (Cursor, Claude Code, Windsurf, Anti Gravity)
-Goal: Learn how to use modern AI-assisted development tools responsibly and effectively in real development workflows.
+**_Goal: Learn how to use modern AI-assisted development tools responsibly and effectively in real development workflows._**
 
 ## **_Which tool did you use?_**
 I installed Cursor.
