@@ -47,7 +47,7 @@ Poor commit messages will cause some confusion regarding the files being uploade
 Goal: Learn how to use git bisect to identify which commit introduced a bug in a project.
 
 **_What does git bisect do?_**
-Through a binary search algorithm, git bisect identifies which of the committed changes contain the buggy code update. This helps in identifying the source of the bugs.
+Through a binary search algorithm, git bisect command line identifies which of the committed changes contain the buggy code update. This helps in identifying the source of the bugs.
 
 **_When would you use it in a real-world debugging situation?_**
 In a situation where a thousand commits are being reviewed (which is highly likely given that people are working on a project in real time), it would only take a maximum of ten steps to find the code with bugs in it.
