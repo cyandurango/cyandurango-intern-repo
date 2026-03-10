@@ -24,3 +24,10 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -m "[update] ad
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
+### COMMITTING
+```
+sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -am "[edit] added colors in colors.txt"
+    [main 5b7ad4b] [edit] added colors in colors.txt
+    1 file changed, 2 insertions(+)
+```
+

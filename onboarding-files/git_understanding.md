@@ -88,3 +88,13 @@ Merge conflicts happen, to which can then be resolved by the person reviewing th
 # 3.6 Git concept: staging vs committing
 Goal: Understand the difference between staging and committing in Git by experimenting in your own repository.
 
+## **_What is the difference between staging and committing?_** 
+Staging allows the user to control which files are to be committed and which files to not be committed. This entails categorizing similar files into one 'stage' before committing said stage into the project.
+
+Commiting is publishing the changes into the project, and with staged 
+
+## **_Why does Git separate these two steps?_** 
+This action allows precision and control over the history of the project. It allows your project history to be more understandable, readable, and revertible in the future progress of the project.
+
+## **_When would you want to stage changes without committing?_**
+When combining specific files into a certain commit category to avoid confusion rather than commiting all files in one commit.
