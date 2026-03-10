@@ -34,3 +34,17 @@ Several issues arise from poorly-named variables: (1) variables may mean differe
 
 ## **_How did refactoring improve code readability?_**
 Comparing the messy code (see [here](test-experiments/area-calculation/area-calculation-messy.c)) and the clean code (see [here](test-experiments/area-calculation/area-calculation-clean.c)), there is a clear directional logic as to what the code is following. The logic is centralized and clear from the get-go.
+
+
+# 4.3 Writing Small, Focused Functions
+Goal: Learn how to break down large functions into smaller, more maintainable units.
+
+## **_Why is breaking down functions beneficial?_**
+Breakdown functions into its simplest components will allow developers to isolate the functions one by one for bugs, reuse the functions in future updates of the project, and creates blocks of code that are easily digestable.
+
+## **_How did refactoring improve the structure of the code?_**
+Refactoring the code made the entire codebase easy to understand and easy to follow by focusing on which function goes through which switch-case. 
+
+See the unmodularized code [here](test-experiments/atm-simulation/atm_simulation.c) and the modularized code [here](test-experiments/atm-simulation/atm_simulation_modularized.c).
+
+
