@@ -82,3 +82,14 @@ Error handling increases reliability by ensuring that only valid data is fed to 
 See updated code [here](test-experiments/area-calculation/area-calc-w-error-handling.c).
 
 
+# 4.7 Refactoring Code for Simplicity
+Goal: Learn how to simplify complex or overly engineered code without losing functionality.
+
+## **_What made the original code complex?_**
+The code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck.c)) is over-engineering simple functions and adding unnecessary lines which can be consolidated into one. 
+
+## **_How did refactoring improve it?_**
+Refactoring the code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck_revised.c)) removed the complex functions and lessened the lines of code by almost a half. The code itself is simple, logical, and readable compared to its predecessor.
+
+
+
