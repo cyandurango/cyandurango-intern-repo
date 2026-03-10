@@ -21,3 +21,16 @@ The following C-code violates the most of the principles stated. The code is, fi
 See Example [Here.](test-experiments/area-calculation/area-calculation-clean.c)
 
 The code above is much cleaner due to the following reasons: (1)the code is simple as it separates the functions into its singular functionality (2) the code is easier to follow and read through, (3) maintaining the code is much easier due to the clear breaks, (4) consistent from the formatting until its display, (5) and efficient
+
+
+# 4.2 Naming Variables & Functions
+Goal: Learn how to choose clear and meaningful names for variables and functions. The intention upon its first read is immediately revealed.
+
+## **_What makes a good variable or function name?_**
+A good variable or function name is a name that summarizes what the variable is and what the variable does.
+
+## **_What issues can arise from poorly named variables?_**
+Several issues arise from poorly-named variables: (1) variables may mean differently which causes high cognitive load, (2) risk of bugs may increase, especially with variable names with similar spellings, and (3) the code becomes dependent to the comments just to explain the variable/function.
+
+## **_How did refactoring improve code readability?_**
+Comparing the messy code (see [here](test-experiments/area-calculation/area-calculation-messy.c)) and the clean code (see [here](test-experiments/area-calculation/area-calculation-clean.c)), there is a clear directional logic as to what the code is following. The logic is centralized and clear from the get-go.
