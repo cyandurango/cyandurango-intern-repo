@@ -57,3 +57,15 @@ Duplicated code not only increases the number of lines in the code making it har
 
 ## **_How did refactoring improve maintainability?_**
 The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program (see [here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c)).
+
+
+
+# 4.5 Commenting & Documentation 
+Goal: Learn when and how to write helpful comments and documentation.
+
+## **_When should you add comments?_**
+Comments are necessary for legal documentation purposes, explaining and clarifying the intent of a certain function (with warnings), and future improvements (see [here](test-experiments/average-numbers/averageNumNew.c)).
+
+## **_When should you avoid comments and instead improve the code?_**
+Comments are avoided when: (1) the code is already self-explanatory to avoid redundancy, (2) it is used for making the start/end of a class, (3) it is placed due to bad naming conventions, (4) to explain complex functions which can be broken down into smaller, digestible functions, and (5) tracking changes which are handled through Github's commit history.
+
