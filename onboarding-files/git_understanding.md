@@ -51,6 +51,8 @@ In a situation where a thousand commits are being reviewed (which is highly like
 ## **_How does it compare to manually reviewing commits?_**
 Utilizing the same situation, users would have to go through each and every commit until they have found the one with bugs. Not only is this time consuming, but it is also taxing. 
 
+See Documentation [Here.](assets/git-bisect-test-results.md)
+
 
 # 3.4 Advanced Git Commands & When to Use Them
 Goal: Understand and experiment with advanced Git commands using your preferred Git desktop client.
@@ -61,6 +63,9 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 - ```git log```: generates the latest five full commit details of a certain repository project
 - ```git blame <filename>```: writes all the committed changes of the specified file.
 
+See Result of ```git cherry-pick``` Experiment [Here.](test-experiments/git-adv-test.txt) <br/>
+
+
 
 ## **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
 - ```git checkout main -- <filename>```: when the local codebase is buggy, this command line overwrites the local saved file with the file saved in the github repository, reverting any changes back into the working codebase in the main branch
@@ -69,8 +74,9 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 - ```git blame <filename>```: lists all commits and its corresponding authors, identifying which member applied the edits, significant in finding bugs and errors of a single file and the person responsible for such.
 
 ## **_What surprised you while testing these commands?_**
-git log and git blame was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
+```git log``` and ```git blame``` was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
 
+See Documentation [Here.](assets/git-advanced-commands.md)
 
 # 3.5 Branching & Team Collaboration
 Goal: Understand the importance of branching, avoiding direct pushes to main, and following a structured review process.
@@ -98,3 +104,5 @@ This action allows precision and control over the history of the project. It all
 
 ## **_When would you want to stage changes without committing?_**
 When combining specific files into a certain commit category to avoid confusion rather than commiting all files in one commit.
+
+See Documentation [Here.](assets/git-stage-commit.md)
