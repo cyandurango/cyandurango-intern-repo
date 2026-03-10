@@ -1,7 +1,3 @@
-<!------------------------------------ 
-FILENAME: git_understanding.md
-------------------------------------->
-
 # 1.1 Merge Conflicts & Conflict Resolution
 Goal: Understand what merge conflicts are, why they happen, and how to resolve them.
 
@@ -60,6 +56,17 @@ Utilizing the same situation, users would have to go through each and every comm
 Goal: Understand and experiment with advanced Git commands using your preferred Git desktop client.
 
 ## **_What does each command do?_**
-## **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
-## **_What surprised you while testing these commands?_**
+- ```git checkout main -- <filename>```: overwrites the specified filename to the latest committed version of the said file from the main branch.
+- ```git cherry-pick <hash of commit>```: from the term 'cherry-picking', it pushes specific edits of a codebase from a branch into the main branch.
+- ```git log```: generates the latest five full commit details of a certain repository project
+- ```git blame <filename>```: writes all the committed changes of the specified file.
 
+
+## **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
+- ```git checkout main -- <filename>```: when the local codebase is buggy, this command line overwrites the local saved file with the file saved in the github repository, reverting any changes back into the working codebase in the main branch
+- ```git cherry-pick <hash of commit>```: allows select commits from a branch to be merged inside the main branch, thus allowing it to function in the main project without the need to merge the whole branch together. This is useful when a developed 
+- ```git log```: a chronological timeline of edits listed from latest to oldest, significant in identifying errors in a project made from to past commits.
+- ```git blame <filename>```: lists all commits and its corresponding authors, identifying which member applied the edits, significant in finding bugs and errors of a single file and the person responsible for such.
+
+## **_What surprised you while testing these commands?_**
+git log and git blame was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
