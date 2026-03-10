@@ -69,3 +69,16 @@ Comments are necessary for legal documentation purposes, explaining and clarifyi
 ## **_When should you avoid comments and instead improve the code?_**
 Comments are avoided when: (1) the code is already self-explanatory to avoid redundancy, (2) it is used for making the start/end of a class, (3) it is placed due to bad naming conventions, (4) to explain complex functions which can be broken down into smaller, digestible functions, and (5) tracking changes which are handled through Github's commit history.
 
+
+# 4.6 Handling Errors & Edge Cases
+Goal: Learn how to write robust code that gracefully handles errors and unexpected inputs.
+
+## **_What was the issue with the original code?_**
+The main issue of the original code is that it doesn't account for inputs outside of its scope (alphabets, other characters or out-of-bound values)
+
+## **_How does handling errors improve reliability?_**
+Error handling increases reliability by ensuring that only valid data is fed to a function. 
+
+See updated code [here](test-experiments/area-calculation/area-calc-w-error-handling.c).
+
+
