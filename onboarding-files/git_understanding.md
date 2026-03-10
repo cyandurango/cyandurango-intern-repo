@@ -85,3 +85,6 @@ Branches separate the new code, thus making it easier in terms of reviewing the 
 Merge conflicts happen, to which can then be resolved by the person reviewing the branch before merging it back into the main project branch.
 
 
+# 3.6 Git concept: staging vs committing
+Goal: Understand the difference between staging and committing in Git by experimenting in your own repository.
+
