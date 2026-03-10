@@ -48,3 +48,12 @@ Refactoring the code made the entire codebase easy to understand and easy to fol
 See the unmodularized code [here](test-experiments/atm-simulation/atm_simulation.c) and the modularized code [here](test-experiments/atm-simulation/atm_simulation_modularized.c).
 
 
+
+# 4.4 Avoiding Code Duplication
+Goal: Understand how to identify and eliminate unnecessary duplication in code.
+
+## **_What were the issues with duplicated code?_**
+Duplicated code not only increases the number of lines in the code making it harder to navigate, it increases the risk of bugs and errors and fixing them would require the developer to update all repetitive coding lines (see [here](test-experiments/fitness-tracker-sim/fitnessTracker.c)). 
+
+## **_How did refactoring improve maintainability?_**
+The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program (see [here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c)).
