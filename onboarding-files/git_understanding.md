@@ -70,3 +70,18 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 
 ## **_What surprised you while testing these commands?_**
 git log and git blame was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
+
+
+# 3.5 Branching & Team Collaboration
+Goal: Understand the importance of branching, avoiding direct pushes to main, and following a structured review process.
+
+## **_Why is pushing directly to main problematic?_**
+The worst case scenario of pushing changes directly to main is that the main project might loose its overall functionality. The use of branches creates a parallel timeline from the main code that can be used to publish changes for review. 
+
+## **_How do branches help with reviewing code?_**
+Branches separate the new code, thus making it easier in terms of reviewing the code. 
+
+## **_What happens if two people edit the same file on different branches?_**
+Merge conflicts happen, to which can then be resolved by the person reviewing the branch before merging it back into the main project branch.
+
+
