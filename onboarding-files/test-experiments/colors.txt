@@ -3,3 +3,5 @@ Blue
 Cabbage
 Green
 Yellow
+Orange
+Violet
