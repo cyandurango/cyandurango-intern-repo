@@ -27,7 +27,7 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % echo "Yellow" >> colors.tx
     2 files changed, 2 insertions(+), 1 deletion(-)
 ```
 
-Generates the [color.txt](../test-experiments/colors.txt) file with pseduo-commits
+Generates the [color.txt](../test-experiments/colors.txt) file with pseudo-commits
 
 ### _GIT BISECT RESULTS_
 

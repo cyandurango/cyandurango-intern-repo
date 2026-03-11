@@ -1,7 +1,7 @@
 # 2.5 Set up VS Code and learn keyboard shortcuts
 
 Research VS Code shortcuts and list at least 10 shortcuts that you find useful.
-Categorise them into Navigation, Editing, Debugging, and Terminal Commands.
+Categorize them into Navigation, Editing, Debugging, and Terminal Commands.
 
 ## **_My Top 10 Keyboard Shortcuts List_**
 
@@ -13,14 +13,14 @@ For Navigation:
 
 For Editing:
 
-- `SHFT + OPT + <-/->` useful for selecting certain words and lines of code carefully.
+- `SHIFT + OPT + <-/->` useful for selecting certain words and lines of code carefully.
 - `CTRL+A` generates comment blocks for documentation purposes
 - `OPT + arrow up/down` move whole line of code up or down the codebase
 
 For Debugging
 
 - `F5` start/continue the program
-- `SHFT+F5` stop the program
+- `SHIFT+F5` stop the program
 
 For Terminal Commands:
 

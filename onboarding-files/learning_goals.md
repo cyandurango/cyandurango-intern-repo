@@ -20,4 +20,4 @@ I am less confident as to how my current skills will translate to the team. But 
 
 ## **_What does success in this internship look like for you?_**
 
-Success in this internship is where my work as an interning back-end developer is being recognized by the company. This meant that I have improved upon my current skillset, and that my internship has helped the company in any way possible.
+Success in this internship is where my work as an interning back-end developer is being recognized by the company. This meant that I have improved upon my current skill-set, and that my internship has helped the company in any way possible.

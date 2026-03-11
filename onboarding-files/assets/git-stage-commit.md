@@ -1,4 +1,4 @@
-## STAGING/COMMITING FILES EXPERIMENT
+## STAGING/COMMITTING FILES EXPERIMENT
 
 After adding "Orange" and "Violet" in colors.txt:
 

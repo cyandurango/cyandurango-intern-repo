@@ -12,7 +12,7 @@ Goal: Understand the core principles of clean code and why they matter in real-w
 
 - **CONSISTENCY**: Consistency refers to how the code is formatted. From adopting a strict style guide to automated formatting, developers can adhere to these principles and make it seem like the entire codebase is written by a single person.
 
-- **EFFICIENCY**: Efficiency refers to writing code that performs well and utilizes the memore and processing power optimally. Typically, Big-O notation is best in identifying the efficiency of a certain code.
+- **EFFICIENCY**: Efficiency refers to writing code that performs well and utilizes the memory and processing power optimally. Typically, Big-O notation is best in identifying the efficiency of a certain code.
 
 ### Example of a messy code
 
@@ -48,13 +48,13 @@ Goal: Learn how to break down large functions into smaller, more maintainable un
 
 ## **_Why is breaking down functions beneficial?_**
 
-Breakdown functions into its simplest components will allow developers to isolate the functions one by one for bugs, reuse the functions in future updates of the project, and creates blocks of code that are easily digestable.
+Breakdown functions into its simplest components will allow developers to isolate the functions one by one for bugs, reuse the functions in future updates of the project, and creates blocks of code that are easily digestible.
 
 ## **_How did refactoring improve the structure of the code?_**
 
 Refactoring the code made the entire codebase easy to understand and easy to follow by focusing on which function goes through which switch-case.
 
-See the unmodularized code [here](test-experiments/atm-simulation/atm_simulation.c) and the modularized code [here](test-experiments/atm-simulation/atm_simulation_modularized.c).
+See the messy code [here](test-experiments/atm-simulation/atm_simulation.c) and the modularized code [here](test-experiments/atm-simulation/atm_simulation_modularized.c).
 
 # 4.4 Avoiding Code Duplication
 
@@ -128,7 +128,7 @@ Code formatting is important because its structured and predictable way of writi
 
 ## **_What issues did the linter detect?_**
 
-Linter detects missing semicolons, trailing whitespaces, mismatch in indentations and unsused variables.
+Linter detects missing semicolons, trailing whitespaces, mismatch in indentations and unused variables.
 
 ## **_Did formatting the code make it easier to read?_**
 

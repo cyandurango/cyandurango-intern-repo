@@ -8,7 +8,28 @@
     "JeRango",
     "onboarding",
     "markdownlint",
-    "cspell"
+    "cspell",
+    "sighreelss",
+    "sighreelsss",
+    "oneline",
+    ""
   ],
-  "ignorePaths": ["node_modules", ".git"]
+  "ignorePaths": [
+    "node_modules", 
+    ".git"
+  ],
+  "patterns": [
+    {
+      "name": "MarkdownInlineCode",
+      "pattern": "/`[^`]+`/g"
+    },
+    {
+      "name": "MarkdownCodeBlock",
+      "pattern": "/^(\\s*`{3,}).*[\\s\\S]*?^\\1/gm"
+    }
+  ],
+  "ignoreRegExpList": [
+    "MarkdownInlineCode",
+    "MarkdownCodeBlock"
+  ]
 }

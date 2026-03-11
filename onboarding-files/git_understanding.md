@@ -10,7 +10,7 @@ Goal: Understand what merge conflicts are, why they happen, and how to resolve t
 
 Main source of merge conflicts are when merge branches have competing commits.
 
-I edited the main ReadMe.md file in the main branch anand the newly created branch called "merge-conflict". This resulted in a merge conflict between the "main" branch and the "merge-conflict" branch.
+I edited the main ReadMe.md file in the main branch and the newly created branch called "merge-conflict". This resulted in a merge conflict between the "main" branch and the "merge-conflict" branch.
 
 ### **_How did you resolve it?_**
 
@@ -120,7 +120,7 @@ Goal: Understand the difference between staging and committing in Git by experim
 
 Staging allows the user to control which files are to be committed and which files to not be committed. This entails categorizing similar files into one 'stage' before committing said stage into the project.
 
-Commiting is publishing the changes into the project, and with staged
+Committing is publishing the changes into the project, and with staged
 
 ### **_Why does Git separate these two steps?_**
 
@@ -128,6 +128,6 @@ This action allows precision and control over the history of the project. It all
 
 ### **_When would you want to stage changes without committing?_**
 
-When combining specific files into a certain commit category to avoid confusion rather than commiting all files in one commit.
+When combining specific files into a certain commit category to avoid confusion rather than committing all files in one commit.
 
 See Documentation [Here.](assets/git-stage-commit.md)
