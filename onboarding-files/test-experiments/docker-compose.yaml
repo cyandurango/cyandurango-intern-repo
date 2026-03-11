@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine # Using Alpine for a smaller, faster image
+    container_name: focus-bear-db
+    restart: always
+    environment:
+      POSTGRES_USER: cyandurango
+      POSTGRES_PASSWORD: cyandurango
+      POSTGRES_DB: userDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
