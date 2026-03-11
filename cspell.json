@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "cyandurango",
+    "Firebase",
+    "ReactJS",
+    "JeRango",
+    "onboarding",
+    "markdownlint",
+    "cspell",
+    "sighreelss",
+    "sighreelsss",
+    "oneline",
+    ""
+  ],
+  "ignorePaths": [
+    "node_modules", 
+    ".git"
+  ],
+  "patterns": [
+    {
+      "name": "MarkdownInlineCode",
+      "pattern": "/`[^`]+`/g"
+    },
+    {
+      "name": "MarkdownCodeBlock",
+      "pattern": "/^(\\s*`{3,}).*[\\s\\S]*?^\\1/gm"
+    }
+  ],
+  "ignoreRegExpList": [
+    "MarkdownInlineCode",
+    "MarkdownCodeBlock"
+  ]
+}
