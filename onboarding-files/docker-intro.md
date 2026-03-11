@@ -1,6 +1,6 @@
 # Milestone 5 | Docker & Local Development Setup
 
-## What is Docker and Why Use It?
+## 5.1 What is Docker and Why Use It?
 
 Goal: Understand what Docker is, how it differs from traditional development setups, and why Focus Bear uses it.
 
