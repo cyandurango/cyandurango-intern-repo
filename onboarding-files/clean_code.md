@@ -133,15 +133,3 @@ Linter detects missing semicolons, trailing whitespaces, mismatch in indentation
 ## **_Did formatting the code make it easier to read?_**
 
 Yes, as the code reads with consistency. The structure of my files is now much clearer.
-
-# 4.11 Static Analysis Checks in CI/CD
-
-Goal: Understand the purpose of Continuous Integration (CI) and Continuous Deployment (CD) and learn how to enforce Markdown linting and spell checks automatically in a project.
-
-## **_What is the purpose of CI/CD?_**
-
-## **_How does automating style checks improve project quality?_**
-
-## **_What are some challenges with enforcing checks in CI/CD?_**
-
-## **_How do CI/CD pipelines differ between small projects and large teams?_**
