@@ -1,4 +1,5 @@
 # Understanding of GIT
+
 PRIMARY GOAL: Document my understanding in using git and Github.
 
 ## 1.1 Merge Conflicts & Conflict Resolution
