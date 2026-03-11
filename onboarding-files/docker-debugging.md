@@ -21,3 +21,5 @@ By typing in the terminal the command `docker logs <container-name>`, i can see 
 ### **_How can you troubleshoot database connection issues inside a containerized NestJS app?_**
 
 Troubleshooting connection issues between the Docker and NestJs, the hostname must refer to the name of the PostgreSQL container, the containers are on the same network, the port can be tested via `docker exec`, or through a "wait-for-it" script for delay.
+
+[See documentation here](assets/docker_test_results.md).
