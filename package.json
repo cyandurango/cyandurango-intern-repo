@@ -31,7 +31,7 @@
     "typescript-eslint": "^8.57.0"
   },
   "lint-staged": {
-    "*.md": [
+    "**/*.md": [
       "markdownlint-cli2",
       "cspell"
     ],
