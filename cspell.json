@@ -10,8 +10,5 @@
     "markdownlint",
     "cspell"
   ],
-  "ignorePaths": [
-    "node_modules",
-    ".git"
-  ]
+  "ignorePaths": ["node_modules", ".git"]
 }

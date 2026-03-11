@@ -2,9 +2,9 @@ name: CI Documentation Check
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
     paths:
-      - "**.md"
+      - '**.md'
 
 jobs:
   check-markdown:
@@ -16,9 +16,9 @@ jobs:
       - name: Markdown Linting
         uses: davidanson/markdownlint-cli2-action@v16
         with:
-          globs: "**/*.md"
+          globs: '**/*.md'
 
       - name: Spell Check
         uses: streetsidesoftware/cspell-action@v6
         with:
-          files: "**/*.md"
+          files: '**/*.md'
