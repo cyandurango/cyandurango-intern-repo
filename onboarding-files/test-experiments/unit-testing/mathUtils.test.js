@@ -1,7 +1,6 @@
 import { calculateTotal } from './mathUtils.js';
 
 describe('calculateTotal', () => {
-  
   // 1. Happy Path: Normal calculation
   test('should calculate the correct total with tax', () => {
     const result = calculateTotal(100, 0.15); // 100 + 15
@@ -25,5 +24,4 @@ describe('calculateTotal', () => {
     const result = calculateTotal(10.5, 0.1);
     expect(result).toBeCloseTo(11.55);
   });
-
 });

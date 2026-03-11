@@ -1,9 +1,9 @@
+### Note: results per command are indented for visualization purposes
 
-### Note: results per commnad are indented for visualization purposes
-
-SITUATION: a text file is generated that lists the colors, and the buggy code is indicated appropriately
+## SITUATION: a text file is generated that lists the colors, and the buggy code is indicated appropriately
 
 ### _SETTING UP THE TEST:_
+
 ```
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "Red" > colors.txt && git add colors.txt && git commit -m "Add Red"
     [main 3c53c07] Add Red
@@ -26,25 +26,27 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % echo "Yellow" >> colors.tx
     [main c0d3f0e] Add Yellow
     2 files changed, 2 insertions(+), 1 deletion(-)
 ```
+
 Generates the [color.txt](../test-experiments/colors.txt) file with pseduo-commits
 
 ### _GIT BISECT RESULTS_
+
 ```
 sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect start
     status: waiting for both good and bad commits
-    
-sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect bad  
+
+sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect bad
     status: waiting for good commit(s), bad commit known
 
-sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect good 3c53c07 
+sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect good 3c53c07
     Bisecting: 1 revision left to test after this (roughly 1 step)
     [50d49ea65e5beee4d10dd6627f499338a356f728] [bug] Add Cabbage
 
-sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect bad          
+sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect bad
     Bisecting: 0 revisions left to test after this (roughly 0 steps)
     [38784e27f453eade07beb2ba13a05b8cebd89b91] Add Blue
 
-sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect good         
+sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect good
     50d49ea65e5beee4d10dd6627f499338a356f728 is the first bad commit
     commit 50d49ea65e5beee4d10dd6627f499338a356f728
     Author: Cyril Andre Durango <cyril.durango@gmail.com>
