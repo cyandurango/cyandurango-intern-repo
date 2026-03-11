@@ -14,7 +14,7 @@ I haven't made any customizations as i am already used to its default theme.
 
 The most useful command is the 'man' command as it allows me to display the manual/usage of other specific commands by typing
 
-```
+```bash
 man <command>
 ```
 

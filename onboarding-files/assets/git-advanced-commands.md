@@ -1,6 +1,7 @@
 ### GIT CHECKOUT MAIN -- <FILENAME>
 
-```sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 1: original codebase" > git-adv-test.txt
+```bash
+sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 1: original codebase" > git-adv-test.txt
 sighreelss@sighreelsss-MacBook-Air test-experiments % git add git-adv-test.txt
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -m "[new] start advanced commands experiment"
     [main 773a024] [new] start advanced commands experiment
@@ -17,7 +18,8 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
 
 ### GIT CHERRY-PICK
 
-```sighreelss@sighreelsss-MacBook-Air test-experiments % git checkout -b git-adv
+```bash
+sighreelss@sighreelsss-MacBook-Air test-experiments % git checkout -b git-adv
     Switched to a new branch 'git-adv'
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 2: feature a" >> git-adv-test.txt
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -am "[add] adding feature a"
@@ -49,7 +51,8 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % git cherry-pick 9db13dd
 
 After resolving conflicts:
 
-```sighreelss@sighreelsss-MacBook-Air test-experiments % git add git-adv-test.txt
+```bash
+sighreelss@sighreelsss-MacBook-Air test-experiments % git add git-adv-test.txt
 sighreelss@sighreelsss-MacBook-Air test-experiments % git cherry-pick --continue
     [main a446fd8] [add] adding feature b
     Date: Tue Mar 10 09:54:50 2026 +0800
@@ -63,7 +66,8 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
 
 Using `git log`:
 
-```sighreelss@sighreelsss-MacBook-Air test-experiments % git log
+```bash
+sighreelss@sighreelsss-MacBook-Air test-experiments % git log
     commit a446fd89d74ea40211c1d6fb2075e1fc16c3ab7d (HEAD -> main)
     Author: Cyril Andre Durango <cyril.durango@gmail.com>
     Date:   Tue Mar 10 09:54:50 2026 +0800
@@ -101,7 +105,8 @@ Using `git log`:
 
 Using `git log --oneline`:
 
-```a446fd8 (HEAD -> main) [add] adding feature b
+```bash
+a446fd8 (HEAD -> main) [add] adding feature b
 19226ba (origin/main, origin/HEAD) [docs] update git-advanced-commands.md
 5d05622 [docs] update git-advanced-commands.md
 773a024 [new] start advanced commands experiment
@@ -110,7 +115,8 @@ b143a79 [setup] milestone 3.4 setup
 
 Using `git log --oneline --graph --all`:
 
-```* a446fd8 (HEAD -> main) [add] adding feature b
+```bash
+* a446fd8 (HEAD -> main) [add] adding feature b
 * 19226ba (origin/main, origin/HEAD) [docs] update git-advanced-commands.md
 * 5d05622 [docs] update git-advanced-commands.md
 * 773a024 [new] start advanced commands experiment
@@ -147,7 +153,8 @@ Using `git log --oneline --graph --all`:
 
 ### GIT BLAME <FILENAME>
 
-```sighreelss@sighreelsss-MacBook-Air test-experiments % git blame git-adv-test.txt
+```bash
+sighreelss@sighreelsss-MacBook-Air test-experiments % git blame git-adv-test.txt
     773a0249 (Cyril Andre Durango 2026-03-10 09:21:56 +0800 1) ln 1: original codebase
     a446fd89 (Cyril Andre Durango 2026-03-10 09:54:50 +0800 2) ln 3: feature b
 ```

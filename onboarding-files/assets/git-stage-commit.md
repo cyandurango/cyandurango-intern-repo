@@ -4,7 +4,7 @@ After adding "Orange" and "Violet" in colors.txt:
 
 ### STAGING
 
-```
+```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % git add colors.txt
 sighreelss@sighreelsss-MacBook-Air test-experiments % git status
     On branch main
@@ -28,7 +28,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ### COMMITTING
 
-```
+```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -am "[edit] added colors in colors.txt"
     [main 5b7ad4b] [edit] added colors in colors.txt
     1 file changed, 2 insertions(+)

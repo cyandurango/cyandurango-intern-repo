@@ -4,7 +4,7 @@
 
 ### _SETTING UP THE TEST:_
 
-```
+```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "Red" > colors.txt && git add colors.txt && git commit -m "Add Red"
     [main 3c53c07] Add Red
     1 file changed, 1 insertion(+)
@@ -31,7 +31,7 @@ Generates the [color.txt](../test-experiments/colors.txt) file with pseduo-commi
 
 ### _GIT BISECT RESULTS_
 
-```
+```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % git bisect start
     status: waiting for both good and bad commits
 
