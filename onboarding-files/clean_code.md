@@ -92,4 +92,11 @@ The code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck.c)) is
 Refactoring the code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck_revised.c)) removed the complex functions and lessened the lines of code by almost a half. The code itself is simple, logical, and readable compared to its predecessor.
 
 
+# 4.9 Writing Unit Tests for Clean Code
+Goal: Learn how writing unit tests helps maintain clean and reliable code.
 
+## **_How do unit tests help keep code clean?_**
+Unit testing helps in refactoring code to be cleaner, ensures that the code and the error handling provides all necessary information, and catches errors early.
+
+## **_What issues did you find while testing?_**
+Using the function in this [file](test-experiments/unit-testing/mathUtils.js), it is tested through Jest using the following [test file](test-experiments/unit-testing/mathUtils.test.js). The following issues found were: invalid inputs, precision of floating points, missing parameters, and out-of-bound values.
