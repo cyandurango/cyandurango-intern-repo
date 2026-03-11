@@ -14,7 +14,7 @@ I hope to further enhance my knowledge and skills in back-end development, as th
 
 I am a problem-solver, and I can usually defend my stance in any idea that i put into the table. I can also weigh in the pros and cons of two distinct ideas, and can help provide a unified decision that minimizes the cons and improves upon the pros.
 
-## **_What do you think you can contribute to the team?_**
+## **_What is one area you feel less confident in that you’d like to improve?_**
 
 I am less confident as to how my current skills will translate to the team. But i believe that with further practice and through my time as an intern in the company, these skills will improve in no time.
 
