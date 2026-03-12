@@ -31,3 +31,16 @@ yarn-error.log*
 
 # Husky
 .husky/_/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Linter Caches
+.eslintcache
+.prettiercache
+
+# OS-Specific Files
+Thumbs.db
+ehthumbs.db
