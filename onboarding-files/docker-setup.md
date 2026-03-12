@@ -6,7 +6,7 @@ Goal: Install Docker and Docker Compose and learn basic commands to manage conta
 
 ### **_What is the difference between docker run and docker-compose up?_**
 
-```docker run``` are used for one-off tasks, starting one container at a time.
+`docker run` are used for one-off tasks, starting one container at a time.
 
 `docker compose up` are used for entire applications, reading a `.yaml` file that can start multiple containers with a single command.
 

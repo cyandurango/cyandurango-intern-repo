@@ -8,7 +8,7 @@ Goal: Understand what Docker is, how it differs from traditional development set
 
 Virtual Machines mimic entire computer systems, running as a guest operating system on top of a host operating system. Has high isolation, consumes larger memory, and starts slow.
 
-Docker, on the other hand,  makes the operating system virtual rather than the hardware. As it shares the host's kernel, it is slight more social than a virtual machine. It only utilizes lesser memory as it runs through an application and its dependencies. As it shares the same OS kernel with the host, startup is instant.
+Docker, on the other hand, makes the operating system virtual rather than the hardware. As it shares the host's kernel, it is slight more social than a virtual machine. It only utilizes lesser memory as it runs through an application and its dependencies. As it shares the same OS kernel with the host, startup is instant.
 
 ### **_Why is containerization useful for a backend like Focus Bear’s?_**
 

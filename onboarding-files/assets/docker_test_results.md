@@ -3,7 +3,7 @@
 ### USING DOCKER PS
 
 ```BASH
-sighreelss@Mac test-experiments % docker ps          
+sighreelss@Mac test-experiments % docker ps
     CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                                         NAMES
     c1c4ba82338d   postgres:16-alpine   "docker-entrypoint.s…"   15 seconds ago   Up 14 seconds   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   focus-bear-db
 ```
@@ -11,7 +11,7 @@ sighreelss@Mac test-experiments % docker ps
 ### USING DOCKER INSPECT <CATEGORY>
 
 ```bash
-sighreelss@Mac test-experiments % docker inspect NAME|ID          
+sighreelss@Mac test-experiments % docker inspect NAME|ID
 uid=501(sighreelss) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),701(com.apple.sharepoint.group.1),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
 ```
 
@@ -33,11 +33,11 @@ sighreelss@Mac test-experiments % docker logs focus-bear-db
 ## ENTER RUNNING CONTAINERS [docker esec -it <container-name> -U <username> -d <POSTGRE_DB>]
 
 ```bash
-sighreelss@Mac test-experiments % docker exec -it focus-bear-db psql -U cyandurango -d userDB                                    
+sighreelss@Mac test-experiments % docker exec -it focus-bear-db psql -U cyandurango -d userDB
     psql (16.13)
     Type "help" for help.
 
-    userDB=# 
+    userDB=#
 ```
 
 ## DOCKER ATTACH <CONTAINER-NAME>
