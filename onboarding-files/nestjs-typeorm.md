@@ -12,7 +12,7 @@ Entities are blueprints for what a single row looks like, whereas repositories a
 
 ### **_How does TypeORM handle migrations in a NestJS project?_**
 
-Through a migration file that allows TypeORM to update the database schema safely
+Currently through setting the synchronize value to true, changing the database every Typescript edit.
 
 ### **_What are the advantages of using PostgreSQL over other databases in a NestJS app?_**
 
