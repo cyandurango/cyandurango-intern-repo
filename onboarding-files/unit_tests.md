@@ -25,3 +25,5 @@ automated testing allows to test a singular utility function before integrating 
 ### **_What did you find challenging when writing your first Jest test?_**
 
 Finding out the testing parameters and test cases proved to be hard as it takes time to understand the function and its capabilities and in identifying loopholes in the data that it accepts.
+
+See results of Unit Testing via Jest here: [Jest Unit Testing](assets/unit-testing-jest.md)
