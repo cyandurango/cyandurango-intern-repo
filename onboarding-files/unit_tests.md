@@ -13,3 +13,15 @@ Mocking API calls in tests would allow developers to test only the component and
 False positives due to the lack of the `await`, testing the wrong UI state coming from asynchronous DOM updates, leaky testing due to lengthy time resolution, and real-time waiting due to a `setTimeout` setting.
 
 See results of the test through this link: [Testing Mock API Calls](assets/mock-api-call-test.md)
+
+## 9.4 Introduction to Unit Testing with Jest
+
+Goal: Learn the basics of unit testing in React using Jest.
+
+### **_Why is automated testing important in software development?_**
+
+automated testing allows to test a singular utility function before integrating it into the main codebase. It acts as a documentation log to explain the inputs and the errors the function can handle.
+
+### **_What did you find challenging when writing your first Jest test?_**
+
+Finding out the testing parameters and test cases proved to be hard as it takes time to understand the function and its capabilities and in identifying loopholes in the data that it accepts.
