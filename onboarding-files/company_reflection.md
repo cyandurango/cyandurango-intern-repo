@@ -1,6 +1,6 @@
 # Milestone 1 | Learn about Focus Bear and set your goals
 
-## 1.5 Understanding of Focus Bear's mission and vision
+## 1.5 - Understanding of Focus Bear's mission and vision
 
 Goal: Explore the Focus Bear website to learn about the company’s mission, vision, and key features.
 
