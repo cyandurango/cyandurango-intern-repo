@@ -52,6 +52,8 @@ Clear commit messages help the team understand at a quick glance as to what the 
 
 Poor commit messages will cause some confusion regarding the files being uploaded inside the project. Vague descriptions create confusion, risk accidental deletion, and loses context of change.
 
+See difference of commits here: [Vague Commit](assets/commit-vague.png), [Overly-Detailed Commit](assets/commit-overly-detailed.png), [Well-structured Commit](assets/commit-well-structured.png)
+
 ## 3.3 Understand Git Bisect
 
 Goal: Learn how to use git bisect to identify which commit introduced a bug in a project.
@@ -68,7 +70,7 @@ In a situation where a thousand commits are being reviewed (which is highly like
 
 Utilizing the same situation, users would have to go through each and every commit until they have found the one with bugs. Not only is this time consuming, but it is also taxing.
 
-See Documentation [Here.](assets/git-bisect-test-results.md)
+See Documentation Here: [Git Bisect Results](assets/git-bisect-test-results.md)
 
 ### 3.4 Advanced Git Commands & When to Use Them
 
@@ -81,7 +83,7 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 - `git log`: generates the latest five full commit details of a certain repository project
 - `git blame <filename>`: writes all the committed changes of the specified file.
 
-See Result of `git cherry-pick` Experiment [Here.](test-experiments/git-adv-test.txt) <br/>
+See Result of `git cherry-pick` Experiment Here: [cherry-pick test results](test-experiments/git-adv-test.txt) <br/>
 
 ### **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
 
@@ -94,7 +96,7 @@ See Result of `git cherry-pick` Experiment [Here.](test-experiments/git-adv-test
 
 `git log` and `git blame` was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
 
-See Documentation [Here.](assets/git-advanced-commands.md)
+See Documentation Here: [Advanced Commands](assets/git-advanced-commands.md)
 
 ## 3.5 Branching & Team Collaboration
 
@@ -130,4 +132,4 @@ This action allows precision and control over the history of the project. It all
 
 When combining specific files into a certain commit category to avoid confusion rather than committing all files in one commit.
 
-See Documentation [Here.](assets/git-stage-commit.md)
+See Documentation Here: [Staging Vs. Committing](assets/git-stage-commit.md)
