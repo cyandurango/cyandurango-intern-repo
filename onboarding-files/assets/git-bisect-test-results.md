@@ -1,4 +1,6 @@
-### Note: results per command are indented for visualization purposes
+# GIT BISECT EXPERIMENTS
+
+Note: results per command are indented for visualization purposes
 
 ## SITUATION: a text file is generated that lists the colors, and the buggy code is indicated appropriately
 
