@@ -42,7 +42,7 @@ Goal: Learn how to write clear, meaningful commit messages that improve collabor
 
 ### **_What makes a good commit message?_**
 
-A good commit message includes a title that encapsulates what the change does. The description focuses on the summary/overview of what the added files does.
+A good commit message ([see here](assets/commit-well-structured.png)) includes a title that encapsulates what the change does. The description focuses on the summary/overview of what the added files does.
 
 ### **_How does a clear commit message help in team collaboration?_**
 
@@ -50,9 +50,7 @@ Clear commit messages help the team understand at a quick glance as to what the 
 
 ### **_How can poor commit messages cause issues later?_**
 
-Poor commit messages will cause some confusion regarding the files being uploaded inside the project. Vague descriptions create confusion, risk accidental deletion, and loses context of change.
-
-See difference of commits here: [Vague Commit](assets/commit-vague.png), [Overly-Detailed Commit](assets/commit-overly-detailed.png), [Well-structured Commit](assets/commit-well-structured.png)
+Poor commit messages (see a [vague commit here](assets/commit-vague.png) or an [overly-detailed commit](assets/commit-overly-detailed.png)) will cause some confusion regarding the files being uploaded inside the project. Vague descriptions create confusion, risk accidental deletion, and loses context of change. As seen in the vague commit example, I was answering some questions from issue 3.2 while editing the formatting of the markdown file. Overly-detailed commit messages, as seen in the example, over-explain the commit message when it should only be short and straight-to-the-point.
 
 ## 3.3 Understand Git Bisect
 
