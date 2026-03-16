@@ -70,7 +70,7 @@ Utilizing the same situation, users would have to go through each and every comm
 
 I set up a branch and created a new file called `status.txt`, initialized with 32 commits, with one having a bad commit. Utilizing `git bisect` commands, rather than expecting to review 32 commits, it took 5 steps to find the `failed` commit. See terminal outputs here: [Git Bisect Results - 2nd Experiment](assets/git-bisect-test-results-2.md), [Result After Bisection](assets/git-bisect-terminal-result.png)
 
-### 3.4 Advanced Git Commands & When to Use Them
+## 3.4 Advanced Git Commands & When to Use Them
 
 Goal: Understand and experiment with advanced Git commands using your preferred Git desktop client.
 
@@ -86,10 +86,44 @@ See the photo documentation below:
 
 `git cherry-pick <hash of commit>`: from the term 'cherry-picking', it pushes specific edits of a codebase from a branch into the main branch.
 
-- `git log`: generates the latest five full commit details of a certain repository project
-- `git blame <filename>`: writes all the committed changes of the specified file.
+As for the test-experiment:
 
-See Result of `git cherry-pick` Experiment Here: [cherry-pick test results](test-experiments/git-adv-test.txt) <br/>
+- I created a branch called `cherrypick` and set up a folder with [pseudo-project-files](assets/git-cherrypick-1-setup.png) (Results are shown in [this picture](assets/git-cherrypick-2-setup-result.png)).
+- With the help of the [commit logs](assets/git-cherrypick-3-branchlogs.png), I was able to specify which features to add unto the main branch using [the cherry-pick command](assets/git-cherrypick-4-cherrypick-cmd.png).
+- In the main branch, the only pushed files were of feature a, b, and d. [See Results Here](assets/git-cherrypick-5-testresults.png)
+
+`git log`: generates a full detail log of recent commits, containing the hash, author, date, and commit details.
+
+sample output of a single commit:
+
+```bash
+commit 299ed6582ce20bfd4649a2464fe6edd85e1b4fac (HEAD -> main)
+Author: Cyril Andre Durango <cyril.durango@gmail.com>
+Date:   Tue Mar 17 00:06:55 2026 +0800
+
+    [feat] adding feature d
+```
+
+`git blame <filename>`: writes the most recent commit changes of each line in the terminal. Each line contains the hash of the commit, filename, author, date, time, and timezone.
+
+sample output:
+
+```bash
+sighreelss@sighreelsss-MacBook-Air cyandurango-intern-repo % git blame onboarding-files/git_understanding.md
+    0ca4dc7f onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:49:39 +0800   1) # Understanding of GIT
+    4dc13b42 onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:50:49 +0800   2)
+    0ca4dc7f onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:49:39 +0800   3) PRIMARY GOAL: Document my understanding in using git and Github.
+    0ca4dc7f onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:49:39 +0800   4)
+    0ca4dc7f onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:49:39 +0800   5) ## 1.1 Merge Conflicts & Conflict Resolution
+    4aa1c1af onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:04:06 +0800   6)
+    d0987be2 milestone-01/git_understanding.md     (Cyril Andre Durango 2026-03-07 13:42:46 +0800   7) Goal: Understand what merge conflicts are, why they happen, and how to resolve them.
+    b1ced7b1 milestone-01/git_understanding.md     (Cyril Andre Durango 2026-03-06 13:54:10 +0800   8)
+    0ca4dc7f onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:49:39 +0800   9) ### **_What caused the conflict?_**
+    b1ced7b1 milestone-01/git_understanding.md     (Cyril Andre Durango 2026-03-06 13:54:10 +0800  10)
+    4aa1c1af onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:04:06 +0800  11) Main source of merge conflicts are when merge branches have competing commits.
+    4aa1c1af onboarding-files/git_understanding.md (Cyril Andre Durango 2026-03-11 13:04:06 +0800  12)
+    ...
+```
 
 ### **_When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?_**
 
