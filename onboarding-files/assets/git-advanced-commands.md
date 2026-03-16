@@ -2,16 +2,22 @@
 
 ```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 1: original codebase" > git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git add git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -m "[new] start advanced commands experiment"
     [main 773a024] [new] start advanced commands experiment
     1 file changed, 1 insertion(+)
     create mode 100644 onboarding-files/test-experiments/git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 2: buggy code" >> git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
     ln 1: original codebase
     ln 2: buggy code
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git checkout main -- git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
     ln 1: original codebase
 ```
@@ -21,21 +27,28 @@ sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
 ```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % git checkout -b git-adv
     Switched to a new branch 'git-adv'
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 2: feature a" >> git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -am "[add] adding feature a"
     [git-adv 3281803] [add] adding feature a
     1 file changed, 1 insertion(+)
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % echo "ln 3: feature b" >> git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git commit -am "[add] adding feature b"
     [git-adv 9db13dd] [add] adding feature b
     1 file changed, 1 insertion(+)
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git checkout main
     Switched to branch 'main'
     Your branch is up to date with 'origin/main'.
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git log git-adv --oneline
     9db13dd (git-adv) [add] adding feature b
     3281803 [add] adding feature a
     19226ba (HEAD -> main, origin/main, origin/HEAD) [docs] update git-advanced-commands.md
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git cherry-pick 9db13dd
     Auto-merging onboarding-files/test-experiments/git-adv-test.txt
     CONFLICT (content): Merge conflict in onboarding-files/test-experiments/git-adv-test.txt
@@ -53,10 +66,12 @@ After resolving conflicts:
 
 ```bash
 sighreelss@sighreelsss-MacBook-Air test-experiments % git add git-adv-test.txt
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % git cherry-pick --continue
     [main a446fd8] [add] adding feature b
     Date: Tue Mar 10 09:54:50 2026 +0800
     1 file changed, 1 insertion(+)
+
 sighreelss@sighreelsss-MacBook-Air test-experiments % cat git-adv-test.txt
     ln 1: original codebase
     ln 3: feature b

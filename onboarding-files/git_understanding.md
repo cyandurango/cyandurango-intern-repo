@@ -76,8 +76,16 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 
 ### **_What does each command do?_**
 
-- `git checkout main -- <filename>`: overwrites the specified filename to the latest committed version of the said file from the main branch.
-- `git cherry-pick <hash of commit>`: from the term 'cherry-picking', it pushes specific edits of a codebase from a branch into the main branch.
+`git checkout main -- <filename>`: overwrites the specified filename to the latest committed version of the said file from the main branch.
+
+See the photo documentation below:
+
+- [Original file](assets/git-checkout-1-orig.png)
+- [Modified file](assets/git-checkout-2-modified.png)
+- [Restored file](assets/git-checkout-3-restored.png)
+
+`git cherry-pick <hash of commit>`: from the term 'cherry-picking', it pushes specific edits of a codebase from a branch into the main branch.
+
 - `git log`: generates the latest five full commit details of a certain repository project
 - `git blame <filename>`: writes all the committed changes of the specified file.
 
