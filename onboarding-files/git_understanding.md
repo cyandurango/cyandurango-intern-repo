@@ -135,7 +135,7 @@ sighreelss@sighreelsss-MacBook-Air cyandurango-intern-repo % git blame onboardin
 
 ### **_What surprised you while testing these commands?_**
 
-`git log` and `git blame` was surprising as it records every thing, particulary `git blame`. git's power to record line-by-line commit updates would allow me to track who is responsible for changing the lines of code, should there be an error.
+`git log` and `git blame` was surprising as it records every thing, particulary `git blame`. Git's power to record line-by-line commit updates would allow me to track who is responsible for changing the lines of code, should there be an error. It's a nice implemented feature that enables transparency and non-repudiation in terms of project coding and collaboration
 
 ## 3.5 Branching & Team Collaboration
 
