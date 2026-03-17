@@ -1,3 +1,5 @@
+# Milestone 4 | Clean Code
+
 ## 4.1 Understanding Clean Code Principles
 
 Goal: Understand the core principles of clean code and why they matter in real-world development.
@@ -16,120 +18,122 @@ Goal: Understand the core principles of clean code and why they matter in real-w
 
 ### Example of a messy code
 
-See Example [Here.](test-experiments/area-calculation/area-calculation-messy.c)
+[See Example Here.](test-experiments/area-calculation/area-calculation-messy.c)
 
 The following C-code violates the most of the principles stated. The code is, firstly, unreadable as the lines are being compacted into 6 lines. The codebase also looks complex because of its compactness. There is no indication of breaks which make it harder to maintain.
 
 ## Converting the Messy Code into Clean Code
 
-See Example [Here.](test-experiments/area-calculation/area-calculation-clean.c)
+[See Example Here.](test-experiments/area-calculation/area-calculation-clean.c)
 
 The code above is much cleaner due to the following reasons: (1)the code is simple as it separates the functions into its singular functionality (2) the code is easier to follow and read through, (3) maintaining the code is much easier due to the clear breaks, (4) consistent from the formatting until its display, (5) and efficient
 
-# 4.2 Naming Variables & Functions
+## 4.2 Naming Variables & Functions
 
 Goal: Learn how to choose clear and meaningful names for variables and functions. The intention upon its first read is immediately revealed.
 
-## **_What makes a good variable or function name?_**
+### **_What makes a good variable or function name?_**
 
 A good variable or function name is a name that summarizes what the variable is and what the variable does.
 
-## **_What issues can arise from poorly named variables?_**
+### **_What issues can arise from poorly named variables?_**
 
 Several issues arise from poorly-named variables: (1) variables may mean differently which causes high cognitive load, (2) risk of bugs may increase, especially with variable names with similar spellings, and (3) the code becomes dependent to the comments just to explain the variable/function.
 
-## **_How did refactoring improve code readability?_**
+Aside from the compacted lines in the [messy code example](test-experiments/area-calculation/area-calculation-messy.c), the variable names are often denoted as single letters. Although understandably that these are simple functions, it would take a long time for new developers to understand what those variables may mean, and what is their use to the whole code.
 
-Comparing the messy code (see [here](test-experiments/area-calculation/area-calculation-messy.c)) and the clean code (see [here](test-experiments/area-calculation/area-calculation-clean.c)), there is a clear directional logic as to what the code is following. The logic is centralized and clear from the get-go.
+### **_How did refactoring improve code readability?_**
 
-# 4.3 Writing Small, Focused Functions
+Comparing the [messy code](test-experiments/area-calculation/area-calculation-messy.c) and the [clean code](test-experiments/area-calculation/area-calculation-clean.c), there is a clear directional logic as to what the code is following. The logic is centralized and clear from the get-go. Additionally, there is clarity in the variable names and function names, making it easier for new developers to understand their purpose.
+
+## 4.3 Writing Small, Focused Functions
 
 Goal: Learn how to break down large functions into smaller, more maintainable units.
 
-## **_Why is breaking down functions beneficial?_**
+### **_Why is breaking down functions beneficial?_**
 
 Breakdown functions into its simplest components will allow developers to isolate the functions one by one for bugs, reuse the functions in future updates of the project, and creates blocks of code that are easily digestible.
 
-## **_How did refactoring improve the structure of the code?_**
+### **_How did refactoring improve the structure of the code?_**
 
 Refactoring the code made the entire codebase easy to understand and easy to follow by focusing on which function goes through which switch-case.
 
-See the messy code [here](test-experiments/atm-simulation/atm_simulation.c) and the modularized code [here](test-experiments/atm-simulation/atm_simulation_modularized.c).
+See the [messy code](test-experiments/atm-simulation/atm_simulation.c) and the [modularized code](test-experiments/atm-simulation/atm_simulation_modularized.c).
 
-# 4.4 Avoiding Code Duplication
+## 4.4 Avoiding Code Duplication
 
 Goal: Understand how to identify and eliminate unnecessary duplication in code.
 
-## **_What were the issues with duplicated code?_**
+### **_What were the issues with duplicated code?_**
 
-Duplicated code not only increases the number of lines in the code making it harder to navigate, it increases the risk of bugs and errors and fixing them would require the developer to update all repetitive coding lines (see [here](test-experiments/fitness-tracker-sim/fitnessTracker.c)).
+Duplicated code not only increases the number of lines in the code making it harder to navigate, it increases the risk of bugs and errors and fixing them would require the developer to update all [repetitive coding lines](test-experiments/fitness-tracker-sim/fitnessTracker.c).
 
-## **_How did refactoring improve maintainability?_**
+### **_How did refactoring improve maintainability?_**
 
-The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program (see [here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c) ).
+The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program ([Updated File Here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c) ).
 
-# 4.5 Commenting & Documentation
+## 4.5 Commenting & Documentation
 
 Goal: Learn when and how to write helpful comments and documentation.
 
-## **_When should you add comments?_**
+### **_When should you add comments?_**
 
-Comments are necessary for legal documentation purposes, explaining and clarifying the intent of a certain function (with warnings), and future improvements (see [here](test-experiments/average-numbers/averageNumNew.c)).
+Comments are necessary for legal documentation purposes, explaining and clarifying the intent of a certain function (with warnings), and future improvements ([see here](test-experiments/average-numbers/averageNumNew.c)).
 
-## **_When should you avoid comments and instead improve the code?_**
+### **_When should you avoid comments and instead improve the code?_**
 
 Comments are avoided when: (1) the code is already self-explanatory to avoid redundancy, (2) it is used for making the start/end of a class, (3) it is placed due to bad naming conventions, (4) to explain complex functions which can be broken down into smaller, digestible functions, and (5) tracking changes which are handled through Github's commit history.
 
-# 4.6 Handling Errors & Edge Cases
+## 4.6 Handling Errors & Edge Cases
 
 Goal: Learn how to write robust code that gracefully handles errors and unexpected inputs.
 
-## **_What was the issue with the original code?_**
+### **_What was the issue with the original code?_**
 
 The main issue of the original code is that it doesn't account for inputs outside of its scope (alphabets, other characters or out-of-bound values)
 
-## **_How does handling errors improve reliability?_**
+### **_How does handling errors improve reliability?_**
 
 Error handling increases reliability by ensuring that only valid data is fed to a function.
 
-See updated code [here](test-experiments/area-calculation/area-calc-w-error-handling.c).
+See [updated code here](test-experiments/area-calculation/area-calc-w-error-handling.c).
 
-# 4.7 Refactoring Code for Simplicity
+## 4.7 Refactoring Code for Simplicity
 
 Goal: Learn how to simplify complex or overly engineered code without losing functionality.
 
-## **_What made the original code complex?_**
+### **_What made the original code complex?_**
 
-The code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck.c)) is over-engineering simple functions and adding unnecessary lines which can be consolidated into one.
+[The code](test-experiments/vowel-consonant/vowelConsonantCheck.c) is over-engineering simple functions and adding unnecessary lines which can be consolidated into one.
 
-## **_How did refactoring improve it?_**
+### **_How did refactoring improve it?_**
 
-Refactoring the code (see [here](test-experiments/vowel-consonant/vowelConsonantCheck_revised.c)) removed the complex functions and lessened the lines of code by almost a half. The code itself is simple, logical, and readable compared to its predecessor.
+Refactoring [the code](test-experiments/vowel-consonant/vowelConsonantCheck_revised.c) removed the complex functions and lessened the lines of code by almost a half. The code itself is simple, logical, and readable compared to its predecessor.
 
-# 4.9 Writing Unit Tests for Clean Code
+## 4.9 Writing Unit Tests for Clean Code
 
 Goal: Learn how writing unit tests helps maintain clean and reliable code.
 
-## **_How do unit tests help keep code clean?_**
+### **_How do unit tests help keep code clean?_**
 
 Unit testing helps in refactoring code to be cleaner, ensures that the code and the error handling provides all necessary information, and catches errors early.
 
-## **_What issues did you find while testing?_**
+### **_What issues did you find while testing?_**
 
-Using the function in this [file](test-experiments/unit-testing/mathUtils.js), it is tested through Jest using the following [test file](test-experiments/unit-testing/mathUtils.test.js). The following issues found were: invalid inputs, precision of floating points, missing parameters, and out-of-bound values.
+Using the function in [this file](test-experiments/unit-testing/mathUtils.js), it is tested through Jest using the following [test file](test-experiments/unit-testing/mathUtils.test.js). The following issues found were: invalid inputs, precision of floating points, missing parameters, and out-of-bound values.
 
-# 4.10 Code Formatting & Style Guides
+## 4.10 Code Formatting & Style Guides
 
 Goal: Understand the importance of code formatting and how to use tools like linters to enforce consistency.
 
-## **_Why is code formatting important?_**
+### **_Why is code formatting important?_**
 
 Code formatting is important because its structured and predictable way of writing code allows for better understanding of the codebase logic and reasoning. Now that the code is better understood due to its formatting, it can facilitate collaboration within a team of developers and prevent bugs from being hidden.
 
-## **_What issues did the linter detect?_**
+### **_What issues did the linter detect?_**
 
 Linter detects missing semicolons, trailing whitespaces, mismatch in indentations and unused variables.
 
-## **_Did formatting the code make it easier to read?_**
+### **_Did formatting the code make it easier to read?_**
 
 Yes, as the code reads with consistency. The structure of my files is now much clearer.
