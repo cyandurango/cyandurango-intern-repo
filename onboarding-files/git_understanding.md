@@ -80,15 +80,15 @@ Goal: Understand and experiment with advanced Git commands using your preferred 
 
 See the photo documentation below:
 
-- [Original file](assets/git-checkout-1-orig.png)
+- [Original file](assets/git-checkout-1-orig.png):
 - [Modified file](assets/git-checkout-2-modified.png)
-- [Restored file](assets/git-checkout-3-restored.png)
+- [Restored file (after `git checkout main -- <file>)](assets/git-checkout-3-restored.png)
 
 `git cherry-pick <hash of commit>`: from the term 'cherry-picking', it pushes specific edits of a codebase from a branch into the main branch.
 
 As for the test-experiment:
 
-- I created a branch called `cherrypick` and set up a folder with [pseudo-project-files](assets/git-cherrypick-1-setup.png) (Results are shown in [this picture](assets/git-cherrypick-2-setup-result.png)).
+- I created a branch and set up a folder with [pseudo-project-files](assets/git-cherrypick-1-setup.png) (Results are shown in [this picture](assets/git-cherrypick-2-setup-result.png)).
 - With the help of the [commit logs](assets/git-cherrypick-3-branchlogs.png), I was able to specify which features to add unto the main branch using [the cherry-pick command](assets/git-cherrypick-4-cherrypick-cmd.png).
 - In the main branch, the only pushed files were of feature a, b, and d. [See Results Here](assets/git-cherrypick-5-testresults.png)
 
@@ -129,14 +129,13 @@ sighreelss@sighreelsss-MacBook-Air cyandurango-intern-repo % git blame onboardin
 
 - `git checkout main -- <filename>`: when the local codebase is buggy, this command line overwrites the local saved file with the file saved in the github repository, reverting any changes back into the working codebase in the main branch
 - `git cherry-pick <hash of commit>`: allows select commits from a branch to be merged inside the main branch, thus allowing it to function in the main project without the need to merge the whole branch together. This is useful when a developed
-- `git log`: a chronological timeline of edits listed from latest to oldest, significant in identifying errors in a project made from to past commits.
-- `git blame <filename>`: lists all commits and its corresponding authors, identifying which member applied the edits, significant in finding bugs and errors of a single file and the person responsible for such.
+- `git log`: a chronological timeline of commits listed from latest to oldest, significant in identifying errors in a project made from to past commits, sorted by recency
+
+- `git blame <filename>`: as it displays the recent commits for each line, it shows exactly at which commit the line was edited.
 
 ### **_What surprised you while testing these commands?_**
 
-`git log` and `git blame` was surprising as it records everything from the time it was committed to the person responsible in committing the changes into the repository.
-
-See Documentation Here: [Advanced Commands](assets/git-advanced-commands.md)
+`git log` and `git blame` was surprising as it records every thing, particulary `git blame`. git's power to record line-by-line commit updates would allow me to track who is responsible for changing the lines of code, should there be an error.
 
 ## 3.5 Branching & Team Collaboration
 
