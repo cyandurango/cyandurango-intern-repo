@@ -147,7 +147,14 @@ The worst case scenario of pushing changes directly to main is that the main pro
 
 ### **_How do branches help with reviewing code?_**
 
-Branches separate the new code, thus making it easier in terms of reviewing the code.
+As branches separate the new/edited code on its own 'timeline', it is now easier in terms of reviewing the code and its changes.
+
+I did an experiment:
+
+- [Setup:](assets/branching-1-setup.png) I have a file named "colors.txt" in my main branch, which will be used in the experiment.
+- [Branch Creation:](assets/branching-2-commit.png) I created a new branch, edited the file's contents and committed it into the branch
+- [Main Branch Check:](assets/branching-3-switch.png) I switched over to the main branch, and as expected, the changes in the new branch is not reflected.
+- [Pushed Branch:](assets/branching-4-github.png) I uploaded the branch, thus appearing in my Github.
 
 ### **_What happens if two people edit the same file on different branches?_**
 
