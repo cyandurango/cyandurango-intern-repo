@@ -19,3 +19,8 @@ Challenges may include false positives especially in 'cspell', consistent mainte
 ## **_How do CI/CD pipelines differ between small projects and large teams?_**
 
 In terms of complexity, projects done by large teams need to be checked before everything compared to simple projects. Larger teams focus more on safety and compliance, and prone to conflicts upon merging.
+
+See the following documentation for reference:
+
+- [The workflow YAML file](../.github/workflows/lint-docs.yaml)
+- [Husky Pre-commit Script Sample Results](assets/husky-precommit-results.png)
