@@ -70,7 +70,7 @@ Duplicated code not only increases the number of lines in the code making it har
 
 ### **_How did refactoring improve maintainability?_**
 
-The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program ([Updated File Here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c) ).
+The code becomes centralized and scalable, making it easier to identify bugs and errors when testing the code. The functions help through its separating key functions of the program ([Updated File Here](test-experiments/fitness-tracker-sim/fitnessTrackerUpdated.c)).
 
 ## 4.5 Commenting & Documentation
 
