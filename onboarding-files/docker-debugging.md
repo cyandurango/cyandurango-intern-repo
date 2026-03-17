@@ -20,7 +20,7 @@ By typing in the terminal the command `docker logs <container-name>`, i can see 
 
 ### **_How can you troubleshoot database connection issues inside a containerized NestJS app?_**
 
-Troubleshooting connection issues between the Docker and NestJs, the hostname must refer to the name of the PostgreSQL container, the containers are on the same network, the port can be tested via `docker exec`, or through a "wait-for-it" script for delay.
+Troubleshooting connection issues between the Docker and NestJs, the hostname must refer to the name of the PostgreSQL container, the containers are on the same network, the port can be tested via `docker exec`, or through a "wait-for-it" script for delay. There was a time wherein i had changed something in the YAML file, and i just let the container run as it is. Everything seemed to not work or that my changes aren't reflected. so I plugged in `docker-compose down` followed by `docker-compose up -d --build`. This is when my changes were reflected unto the docker container.
 
 ### **_The Experiment: Docker Container Management and Debugging_**
 
