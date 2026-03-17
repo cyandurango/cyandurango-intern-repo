@@ -78,11 +78,13 @@ Goal: Learn when and how to write helpful comments and documentation.
 
 ### **_When should you add comments?_**
 
-Comments are necessary for legal documentation purposes, explaining and clarifying the intent of a certain function (with warnings), and future improvements ([see here](test-experiments/average-numbers/averageNumNew.c)).
+Comments are necessary for legal documentation purposes, explaining and clarifying the intent of a certain function (with warnings), and future improvements.
 
 ### **_When should you avoid comments and instead improve the code?_**
 
 Comments are avoided when: (1) the code is already self-explanatory to avoid redundancy, (2) it is used for making the start/end of a class, (3) it is placed due to bad naming conventions, (4) to explain complex functions which can be broken down into smaller, digestible functions, and (5) tracking changes which are handled through Github's commit history.
+
+Here is the [poorly-commented code](test-experiments/average-numbers/averageNum.c), in which most of what was listed to be avoided in commenting code is being applied here. The [rewritten version](test-experiments/average-numbers/averageNumNew.c) takes out most of the code as it is already self-explanatory, leaving only a short description of its functionality and possible warnings.
 
 ## 4.6 Handling Errors & Edge Cases
 
