@@ -21,7 +21,7 @@ describe('calculateTotal', () => {
 
   // 4. Floating Point: Testing precision
   test('should handle decimal values accurately', () => {
-    const result = calculateTotal(10.5, 0.1);
-    expect(result).toBeCloseTo(11.55);
+    const result = calculateTotal(10.2, 0.1);
+    expect(result).toBeCloseTo(11.22);
   });
 });

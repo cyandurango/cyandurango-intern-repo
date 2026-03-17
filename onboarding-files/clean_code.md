@@ -124,6 +124,8 @@ Unit testing helps in refactoring code to be cleaner, ensures that the code and 
 
 Using the function in [this file](test-experiments/unit-testing/mathUtils.js), it is tested through Jest using the following [test file](test-experiments/unit-testing/mathUtils.test.js). The following issues found were: invalid inputs, precision of floating points, missing parameters, and out-of-bound values.
 
+Here is a [screenshot of the test results](assets/unit-testing-results.png). I tried using `toBe` for all of the test results, and I seem to get an error mostly in the [decimal values](assets/unit-testing-results-fail.png). When i switched to `toBeCloseto`, the test indicates a pass. This may be due to the fact that the machine only understands binary, therefore any resulting decimal value would always be close to, but not equal, the actual value.
+
 ## 4.10 Code Formatting & Style Guides
 
 Goal: Understand the importance of code formatting and how to use tools like linters to enforce consistency.

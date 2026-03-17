@@ -15,10 +15,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "@eslint/css": "^1.0.0",
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^1.1.0",
     "@eslint/markdown": "^7.5.1",
+    "babel-jest": "^30.3.0",
     "cspell": "^9.7.0",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
@@ -39,7 +42,7 @@
     ],
     "*.{js,jsx}": [
       "eslint --fix",
-      "jest --findRelatedTests"
+      "jest --findRelatedTests --passWithNoTests"
     ]
   }
 }
