@@ -1,7 +1,7 @@
 Red
-Blue
-Cabbage
-Green
-Yellow
 Orange
+Yellow
+Green
+Blue
+Indigo
 Violet
