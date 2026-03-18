@@ -92,13 +92,11 @@ Goal: Learn how to write robust code that gracefully handles errors and unexpect
 
 ### **_What was the issue with the original code?_**
 
-The main issue of the original code is that it doesn't account for inputs outside of its scope (alphabets, other characters or out-of-bound values)
+The main issue of the [original code](test-experiments/area-calculation/area-calculation-clean.c) is that it doesn't account for inputs outside of its scope (alphabets, other characters or out-of-bound values). The only error handling implemented in this code is the shape selection.
 
 ### **_How does handling errors improve reliability?_**
 
-Error handling increases reliability by ensuring that only valid data is fed to a function.
-
-See [updated code here](test-experiments/area-calculation/area-calc-w-error-handling.c).
+Error handling increases reliability by ensuring that only valid data is fed to or processed by a function. In the [updated code](test-experiments/area-calculation/area-calc-w-error-handling.c), I added guard statements for the measurement inputs, returning '-1.0', to check for input validity (valid for numeric, invalid for alphabetic and otherwise). A final if-statement handles the outputted error, checking if it receives '-1.0' that signifies invalid inputs. In the shape selection, the error handling was also updated; it included a guard statement that checks whether the inputted value was a numerical value or not, displaying an appropriate error message rather than just 'Invalid Selection'.
 
 ## 4.7 Refactoring Code for Simplicity
 
