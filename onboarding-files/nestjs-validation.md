@@ -16,6 +16,8 @@ These pipes transform and validate data into the necessary values, converting th
 
 I added the `ValidationPipe` in the `main.ts` file. I enabled whitelisting that acts as an automated firewall/error check, without the need to write `throw Error()` lines inside the service methods. I also enabled `forbidNonWhitelisted` that stops the request and returns a bad request error for extra properties not found in any DTOs. `Transform` was also enabled to transform numerical strings to numbers should any DTO variable require a number.
 
+I created the `app.module.spec.ts` to unit test the app module for the Validation Pipe. The [output terminal](assets/app-unit-test-validationpipe.png) printed a pass result, most notably in the second test where an error is returned for variables outside the user DTO.
+
 ### **_What is the difference between built-in and custom pipes?_**
 
 Built-in pipes are preconfigured to handle standard needs in web development, from type coercion to validation and many more. Custom pipes are pipes specific and unique to the application logic itself that built-in pipes cannot do.
