@@ -36,6 +36,7 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+.env.production
 
 # Linter Caches
 .eslintcache
