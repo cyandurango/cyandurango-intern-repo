@@ -44,5 +44,8 @@
       "eslint --fix",
       "jest --findRelatedTests --passWithNoTests"
     ]
+  },
+  "dependencies": {
+    "@nestjs/testing": "^11.1.17"
   }
 }
