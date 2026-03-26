@@ -14,11 +14,11 @@ Mocking dependencies would allow the testing time to reduce, as real dependencie
 
 ### **_What are common pitfalls when writing unit tests in NestJS?_**
 
-A common pitfall in writing unit tests for me is forgetting to mock all necessary dependencies. I came to problem where I found the redis running just because I didn't mock one of the queues. This would make all the dependencies run in the background and make the testing dependent on the device's environment. Other pitfalls include forgetting to clean the testing module, forgetting to await asynchronous functions, and over-mocking.
+A common pitfall in writing unit tests for me is forgetting to mock all necessary dependencies. I came to problem where I found the redis running just because I didn't mock the queue. This would make all the dependencies run in the background and make the testing dependent on the device's environment. Other pitfalls include forgetting to clean the testing module, forgetting to await asynchronous functions, and over-mocking.
 
 ### **_How can you ensure that unit tests cover all edge cases?_**
 
-What I usually do is to identify first all the scenarios where everything works as expected. The hard part is identifying the error cases, and this entails identifying the errors from lacking dependencies, errors from values exceeding or below the stated limits, and errors when the data received is unexpected, missing, or undefined.
+What I usually do is to identify first all the scenarios where everything works as expected. The hard part is identifying the error cases, and this entails identifying the errors from lacking dependencies, errors from values exceeding or below the stated limits, and errors when the data received is unexpected, missing, or undefined
 
 ### **_Documentation:_**
 
