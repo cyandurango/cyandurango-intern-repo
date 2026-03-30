@@ -1,0 +1,25 @@
+# Milestone 10 | Debugging
+
+## 10.3 Debugging with VS Code & Breakpoints
+
+### **_How do breakpoints help in debugging compared to console logs?_**
+
+Console logs forces developers to manually edit the codebase, increasing debugging time by having to relaunch the docker every new edit. Breakpoints pause the application entirely, inspecting the entire state of the application without writing temporary debugging code.
+
+### **_What is the purpose of launch.json, and how does it configure debugging?_**
+
+`launch.json` configures the VSCode debugger based on the development environment. In a NestJS-PostgreSQL-Docker setup, it maps source files from the local machine to the compiled files in the container so that breakpoints between these files align perfectly.
+
+### **_How can you inspect request parameters and responses while debugging?_**
+
+Since the breakpoint pauses the application, it would allow developers to see how all the variables come to play and change as the next lines of code are being executed one at a time.
+
+### **_How can you debug background jobs that don’t run in a typical request-response cycle?_**
+
+### **_Documentation_**
+
+- [Launch.json Setup](assets/debug-1-setup.png)
+- [Debugger Output on a Controller Breakpoint](assets/debug-2-controller.png)
+- [Debugger Output on a Service Breakpoint](assets/debug-3-service.png)
+
+As seen in the photos of the debugger output, the code pasues on the indicated lines. The Bruno visualization also waits for the api response. I observed that takes longer since we are in the process of debugging through breakpoints compared to running the application.
