@@ -6,15 +6,19 @@
 
 Console logs forces developers to manually edit the codebase, increasing debugging time by having to relaunch the docker every new edit. Breakpoints pause the application entirely, inspecting the entire state of the application without writing temporary debugging code.
 
+For this set-up, I configured VSCode's debug to launch together when I load the application via a docker.
+
 ### **_What is the purpose of launch.json, and how does it configure debugging?_**
 
-`launch.json` configures the VSCode debugger based on the development environment. In a NestJS-PostgreSQL-Docker setup, it maps source files from the local machine to the compiled files in the container so that breakpoints between these files align perfectly.
+`launch.json` configures the VSCode debugger based on a specific development environment. In a NestJS-PostgreSQL-Docker architecture, it maps source files from the local machine to the compiled files in the container. This precise mapping ensures that the breakpoint in the typescript aligns perfectly with the executing code in the container.
 
 ### **_How can you inspect request parameters and responses while debugging?_**
 
-Since the breakpoint pauses the application, it would allow developers to see how all the variables come to play and change as the next lines of code are being executed one at a time.
+Since the breakpoint pauses the application, it would allow developers to see how all the variables come to play and change as the next lines of code are being executed one at a time. Inline hover inspects over the request parameters through hovering the cursor. Variables Pane showcases the entire local scope, expanding headers and database without the need for JSON. The watch panel also tracks expressions monitoring when and how they change.
 
 ### **_How can you debug background jobs that don’t run in a typical request-response cycle?_**
+
+Background jobs are detached from normal HTTP routes, thereby making it harder to debug or trigger them through an API client. Breakpoints are the bridge to debugging them. Placing a breakpoint on a job handler would allow us to see and debug background jobs.
 
 ### **_Documentation_**
 
