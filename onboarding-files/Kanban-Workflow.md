@@ -1,6 +1,6 @@
 # Milestone 0 | Working in an Agile Team
 
-## 0.9 Agile Ceremonies & Team Collaboration
+## 0.10 Agile Workflows & Kanban
 
 ### **_How does Kanban help manage priorities and avoid overload?_**
 
